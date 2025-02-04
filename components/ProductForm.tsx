@@ -53,7 +53,7 @@ export default function ProductForm() {
   }, []);
 
   const calculateTotal = (quantity: number, price: number, profit: number) => {
-    const total = quantity * price * (1 + profit / 100);
+    const total = quantity * price * profit ;
     return Number(total.toFixed(2));
   };
 
